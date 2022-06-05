@@ -1,0 +1,99 @@
+@import '../../global.scss';
+
+.about {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .left {
+    flex: 1;
+
+    @include mobile {
+      display: none;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 70%;
+        border-radius: 35px;
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    position: relative;
+
+    .wrapper-2 {
+      width: 85%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      grid-gap: 30px;
+      background-color: white;
+      padding: 20px;
+
+      @include mobile {
+        grid-gap: 5px;
+        padding: auto;
+      }
+    }
+    .cv-btn {
+      width: 130px;
+      background-color: #0a9396;
+      border-radius: 35px;
+      color: white;
+      letter-spacing: 1.2px;
+      padding: 14px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 500;
+      opacity: 0.7;
+      transition: 0.3s;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    a:hover {
+      background-color: #0a9396;
+      opacity: 1;
+    }
+
+    h1 {
+      font-size: 35px;
+      color: #dc143c;
+
+      @include mobile {
+        font-size: 18px;
+        color: #dc143c;
+      }
+    }
+
+    h3 {
+      font-size: 25px;
+      color: #0a9396;
+
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+    p {
+      font-size: 15px;
+      color: #222;
+
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+  }
+}
